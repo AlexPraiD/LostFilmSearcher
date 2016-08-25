@@ -1,0 +1,88 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Data.Win.ADODB.hpp>
+#include <IdBaseComponent.hpp>
+#include <IdComponent.hpp>
+#include <IdHTTP.hpp>
+#include <IdIOHandler.hpp>
+#include <IdIOHandlerSocket.hpp>
+#include <IdIOHandlerStack.hpp>
+#include <IdSSL.hpp>
+#include <IdSSLOpenSSL.hpp>
+#include <IdTCPClient.hpp>
+#include <IdTCPConnection.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Grids.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Samples.Spin.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TDBGrid *DBGrid1;
+	TEdit *Edit1;
+	TEdit *Edit2;
+	TMemo *Memo2;
+	TDBNavigator *DBNavigator1;
+	TGroupBox *GroupBox1;
+	TButton *Button1;
+	TButton *Button2;
+	TIdSSLIOHandlerSocketOpenSSL *IdSSLIOHandlerSocketOpenSSL1;
+	TIdHTTP *IdHTTP1;
+	TDataSource *DataSource1;
+	TADOQuery *ADOQuery1;
+	TProgressBar *ProgressBar1;
+	TButton *Button3;
+	TGroupBox *GroupBox2;
+	TButton *Button4;
+	TEdit *Edit3;
+	TEdit *Edit4;
+	TSpinEdit *SpinEdit1;
+	TSpinEdit *SpinEdit2;
+	TPanel *Panel1;
+	TButton *Button5;
+	TButton *Button6;
+	TButton *Button7;
+	TLabel *Label1;
+	TLabel *Label2;
+	TPanel *Panel2;
+	TButton *Button9;
+	TButton *Button8;
+	TButton *Button10;
+	TGroupBox *GroupBox3;
+	TDBGrid *DBGrid2;
+	void __fastcall Column_Optimized(void);
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall Button3Click(TObject *Sender);
+	void __fastcall Button4Click(TObject *Sender);
+	void __fastcall DBGrid1DblClick(TObject *Sender);
+	void __fastcall Button7Click(TObject *Sender);
+	void __fastcall Button6Click(TObject *Sender);
+	void __fastcall DBGrid1CellClick(TColumn *Column);
+	void __fastcall Button5Click(TObject *Sender);
+	void __fastcall Button8Click(TObject *Sender);
+	void __fastcall Button9Click(TObject *Sender);
+
+
+
+
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
